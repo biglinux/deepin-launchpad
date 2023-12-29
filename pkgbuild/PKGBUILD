@@ -14,16 +14,14 @@ depends=('qt5-base' 'qt5-declarative' 'qt5-quickcontrols2' 'qt5-svg' 'dtkcore' '
 makedepends=('cmake' 'ninja' 'gtest' 'qt5-tools')
 provides=('deepin-launcher')
 conflicts=('deepin-launcher')
-source=("https://github.com/linuxdeepin/dde-launchpad/archive/$pkgver/$pkgname-$pkgver.tar.gz"
-        dde-launchpad-modifications.patch)
-sha512sums=('SKIP'
-            'SKIP')
+source=("https://github.com/linuxdeepin/dde-launchpad/archive/$pkgver/$pkgname-$pkgver.tar.gz")
+sha512sums=('SKIP')
 
-prepare() {
-  # Apply patch for compatibility with AppStreamQt5 and build adjustments
-  cd dde-launchpad-$pkgver
-  patch -p1 < "${srcdir}/dde-launchpad-modifications.patch"
-}
+# prepare() {
+#   # Apply patch for compatibility with AppStreamQt5 and build adjustments
+#   cd dde-launchpad-$pkgver
+#   patch -p1 < "${srcdir}/dde-launchpad-modifications.patch"
+# }
 
 build() {
   cd dde-launchpad-$pkgver
