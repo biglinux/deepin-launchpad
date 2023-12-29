@@ -1,7 +1,7 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -25,18 +25,20 @@ option(PREFER_QT_5 "Prefer to use Qt 5 even if we have Qt 6" ON)
+@@ -25,18 +25,20 @@
  if(PREFER_QT_5)
      set(QT_NS Qt5)
      set(DTK_NS Dtk)
@@ -29,7 +29,7 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 diff --git a/desktopintegration.cpp b/desktopintegration.cpp
 --- a/desktopintegration.cpp
 +++ b/desktopintegration.cpp
-@@ -65,7 +65,7 @@ bool DesktopIntegration::appIsCompulsoryForDesktop(const QString &desktopId)
+@@ -65,7 +65,7 @@
      // qDebug() << pool.flags() << currentDE;
      pool.load();
 
@@ -42,7 +42,7 @@ diff --git a/desktopintegration.cpp b/desktopintegration.cpp
 diff --git a/src/ddeintegration/CMakeLists.txt b/src/ddeintegration/CMakeLists.txt
 --- a/src/ddeintegration/CMakeLists.txt
 +++ b/src/ddeintegration/CMakeLists.txt
-@@ -133,10 +133,10 @@ target_link_libraries(dde-integration-dbus
+@@ -133,10 +133,10 @@
  PRIVATE
      Qt::Core Qt::Gui ${DTK_NS}::Core launcher-utils)
 
@@ -55,4 +55,3 @@ diff --git a/src/ddeintegration/CMakeLists.txt b/src/ddeintegration/CMakeLists.t
  else()
      target_compile_definitions(dde-integration-dbus
      PUBLIC NO_APPSTREAM_QT
- 
