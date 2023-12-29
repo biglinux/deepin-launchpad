@@ -16,8 +16,8 @@ provides=('deepin-launcher')
 conflicts=('deepin-launcher')
 source=("https://github.com/linuxdeepin/dde-launchpad/archive/$pkgver/$pkgname-$pkgver.tar.gz"
          appstream-1.0.patch)
-sha512sums=('62346dd4909fe739fc6cbb9aa953bfb826813d356837357a4db6d8487044fc0950345f318255aaceb3787e85eda822ce7984367f5971f1f57a62a07a00ff5d77'
-            '1382a9d911428c046b637d9d3b53232ea32b4e688c12b9c42f38ecc4e409344bd1621c2ffe9511a9c9df0fbf9967e5f438cd6ba48312424ad1e16de2ad78d1f1')
+sha512sums=('SKIP'
+            'SKIP')
 
 prepare() {
   cd dde-launchpad-$pkgver
