@@ -17,11 +17,11 @@ conflicts=('deepin-launcher')
 source=("https://github.com/linuxdeepin/dde-launchpad/archive/$pkgver/$pkgname-$pkgver.tar.gz")
 sha512sums=('SKIP')
 
-prepare() {
-  cd dde-launchpad-$pkgver
-# Support appstream 1.0
-  patch -p1 -i ../appstream-1.0.patch
-}
+# prepare() {
+#   cd dde-launchpad-$pkgver
+# # Support appstream 1.0
+#   patch -p1 -i ../appstream-1.0.patch
+# }
 
 build() {
   cd dde-launchpad-$pkgver
