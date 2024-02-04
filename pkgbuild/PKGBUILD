@@ -8,7 +8,7 @@ arch=('x86_64')
 url="https://github.com/linuxdeepin/dde-launchpad"
 license=('GPL3')
 depends=('qt6-svg' 'qt6-declarative' 'appstream-qt'
-         'dtk6declarative-git' 'dtk6gui-git' 'dtk6widget-git' 'dtk6core-git'
+         'dtk6declarative' 'dtk6gui' 'dtk6widget' 'dtk6core'
          'qt6-base' 'qt6-svg')
 makedepends=('git' 'cmake' 'ninja' 'qt6-tools' 'dtkcommon')
 provides=('deepin-launcher')
