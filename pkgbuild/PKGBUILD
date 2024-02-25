@@ -1,16 +1,16 @@
 # Maintainer: Tales A. Mendonça <talesam@gmail.com>
 
 pkgname=deepin-launchpad
-pkgver=0.4.4
-pkgrel=2
+pkgver=0.4.6
+pkgrel=1
 pkgdesc='The "launcher" or "start menu" component for DDE - next generation'
 arch=('x86_64')
 url="https://github.com/linuxdeepin/dde-launchpad"
 license=('GPL3')
-depends=('qt5-svg' 'qt5-quickcontrols' 'appstream-qt'
-         'dtkdeclarative' 'dtkgui' 'dtkwidget' 'dtkcore'
-         'qt5-base' 'qt5-x11extras' 'qt5-svg')
-makedepends=('git' 'cmake' 'ninja' 'qt5-tools' 'dtkcommon' )
+depends=('qt6-svg' 'qt6-declarative' 'appstream-qt'
+         'dtk6declarative-git' 'dtk6gui-git' 'dtk6widget-git' 'dtk6core-git'
+         'qt6-base' 'qt6-svg')
+makedepends=('git' 'cmake' 'ninja' 'qt6-tools' 'dtkcommon')
 provides=('deepin-launcher')
 conflicts=('deepin-launcher')
 source=("https://github.com/linuxdeepin/dde-launchpad/archive/$pkgver/$pkgname-$pkgver.tar.gz")
